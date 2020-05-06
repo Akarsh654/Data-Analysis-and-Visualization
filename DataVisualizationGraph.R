@@ -1,3 +1,4 @@
+# This code recreates a graph from The Economist, https://www.economist.com/graphic-detail/2011/12/02/corrosive-corruption
 library(ggplot2)
 library(data.table)
 library(ggthemes)
