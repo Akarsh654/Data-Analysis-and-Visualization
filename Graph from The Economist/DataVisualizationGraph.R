@@ -3,7 +3,6 @@ library(ggplot2)
 library(data.table)
 library(ggthemes)
 library(plotly)
-setwd('C:/Users/akars/Desktop/Studies/EXTRA/R')
 
 # read the file and drop the first column
 df <- fread("Economist_Data.csv",drop = 1)
