@@ -1,4 +1,4 @@
-setwd('C:/Users/akars/Desktop/Studies/EXTRA/R')
+
 # This code solves the MoneyBall problem of 2001 to replace the 3 players of Oakland A's
 # The data is obtained from http://www.seanlahman.com/baseball-archive/statistics/
 # To get information about he formulae used check the following wikipedia links:
