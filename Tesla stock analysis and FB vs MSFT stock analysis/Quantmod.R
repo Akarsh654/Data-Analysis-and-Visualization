@@ -6,7 +6,7 @@ library(PerformanceAnalytics)
 library(tseries)
 library(lubridate)
 library(Quandl)
-Quandl.api_key("zrcB2Ejv9UmvhPCUsy2_") # Get a free Quandl api key from https://docs.quandl.com/docs#section-authentication
+Quandl.api_key("") # Get a free Quandl api key from https://docs.quandl.com/docs#section-authentication
 
 
 # pull the stock data from yahoo finance
