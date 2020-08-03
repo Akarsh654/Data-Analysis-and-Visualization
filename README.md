@@ -1,6 +1,6 @@
 # Data-Visualization-Projects
 
-* [Graph from Economist]{https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/Graph%20from%20The%20Economist/DataVisualizationGraph.R)
+* [Graph from Economist](https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/Graph%20from%20The%20Economist/DataVisualizationGraph.R)
 <img src="https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/Graph%20from%20The%20Economist/Rplot.png" width="400" height="300"/>
 
 * [Kernel Density Estimation](https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/Kernel%20Density%20Estimation%20(KDE)/Kernel%20Density%20Estimation.ipynb)
