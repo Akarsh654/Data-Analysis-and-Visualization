@@ -7,6 +7,7 @@
 <img src="https://www.researchgate.net/profile/Bilkisu_Garba/publication/328939494/figure/fig1/AS:692896068026371@1542210704436/Kernel-density-estimates-plot-compared-to-normal-density-plot-of-WAES.png" width="400" height="300"/>
 
 * [Moneyball Problem](https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/MoneyBall%20Problem/MoneyBall.R)
+<img src="https://techcrunch.com/wp-content/uploads/2016/04/moneyball.png" width="400" height="300"/>
 
 * [Tesla,Facebook and Microsoft Stock Analysis](https://github.com/Akarsh654/Data-Visualization-Projects/blob/master/Tesla%20stock%20analysis%20and%20FB%20vs%20MSFT%20stock%20analysis/Quantmod.R)
 
