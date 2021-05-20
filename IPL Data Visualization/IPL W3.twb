@@ -1,0 +1,2734 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook original-version='18.1' source-build='2021.1.1 (20211.21.0420.1112)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Ball_by_Ball+' inline='true' name='federated.0enygan0fecg7v1bbvak41hef7o0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Ball_by_Ball' name='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p'>
+            <connection class='textscan' directory='C:/Users/akars/Desktop/Studies/Internships/Data Analytics/Tableau Full course' filename='Ball_by_Ball.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Ball_by_Ball.csv' table='[Ball_by_Ball#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='Match_Id' ordinal='0' />
+            <column datatype='integer' name='Innings_Id' ordinal='1' />
+            <column datatype='integer' name='Over_Id' ordinal='2' />
+            <column datatype='integer' name='Ball_Id' ordinal='3' />
+            <column datatype='integer' name='Team_Batting_Id' ordinal='4' />
+            <column datatype='integer' name='Team_Bowling_Id' ordinal='5' />
+            <column datatype='integer' name='Striker_Id' ordinal='6' />
+            <column datatype='integer' name='Striker_Batting_Position' ordinal='7' />
+            <column datatype='integer' name='Non_Striker_Id' ordinal='8' />
+            <column datatype='integer' name='Bowler_Id' ordinal='9' />
+            <column datatype='integer' name='Batsman_Scored' ordinal='10' />
+            <column datatype='string' name='Extra_Type' ordinal='11' />
+            <column datatype='integer' name='Extra_Runs' ordinal='12' />
+            <column datatype='integer' name='Player_dissimal_Id' ordinal='13' />
+            <column datatype='string' name='Dissimal_Type' ordinal='14' />
+            <column datatype='integer' name='Fielder_Id' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Ball_by_Ball.csv' table='[Ball_by_Ball#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='Match_Id' ordinal='0' />
+              <column datatype='integer' name='Innings_Id' ordinal='1' />
+              <column datatype='integer' name='Over_Id' ordinal='2' />
+              <column datatype='integer' name='Ball_Id' ordinal='3' />
+              <column datatype='integer' name='Team_Batting_Id' ordinal='4' />
+              <column datatype='integer' name='Team_Bowling_Id' ordinal='5' />
+              <column datatype='integer' name='Striker_Id' ordinal='6' />
+              <column datatype='integer' name='Striker_Batting_Position' ordinal='7' />
+              <column datatype='integer' name='Non_Striker_Id' ordinal='8' />
+              <column datatype='integer' name='Bowler_Id' ordinal='9' />
+              <column datatype='integer' name='Batsman_Scored' ordinal='10' />
+              <column datatype='string' name='Extra_Type' ordinal='11' />
+              <column datatype='integer' name='Extra_Runs' ordinal='12' />
+              <column datatype='integer' name='Player_dissimal_Id' ordinal='13' />
+              <column datatype='string' name='Dissimal_Type' ordinal='14' />
+              <column datatype='integer' name='Fielder_Id' ordinal='15' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Match.csv' table='[Match#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='Match_Id' ordinal='0' />
+              <column datatype='date' name='Match_Date' ordinal='1' />
+              <column datatype='integer' name='Team_Name_Id' ordinal='2' />
+              <column datatype='integer' name='Opponent_Team_Id' ordinal='3' />
+              <column datatype='integer' name='Season_Id' ordinal='4' />
+              <column datatype='string' name='Venue_Name' ordinal='5' />
+              <column datatype='integer' name='Toss_Winner_Id' ordinal='6' />
+              <column datatype='string' name='Toss_Decision' ordinal='7' />
+              <column datatype='integer' name='IS_Superover' ordinal='8' />
+              <column datatype='integer' name='IS_Result' ordinal='9' />
+              <column datatype='integer' name='Is_DuckWorthLewis' ordinal='10' />
+              <column datatype='string' name='Win_Type' ordinal='11' />
+              <column datatype='integer' name='Won_By' ordinal='12' />
+              <column datatype='integer' name='Match_Winner_Id' ordinal='13' />
+              <column datatype='integer' name='Man_Of_The_Match_Id' ordinal='14' />
+              <column datatype='integer' name='First_Umpire_Id' ordinal='15' />
+              <column datatype='integer' name='Second_Umpire_Id' ordinal='16' />
+              <column datatype='string' name='City_Name' ordinal='17' />
+              <column datatype='string' name='Host_Country' ordinal='18' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Player.csv' table='[Player#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='Player_Id' ordinal='0' />
+              <column datatype='string' name='Player_Name' ordinal='1' />
+              <column datatype='date' name='DOB' ordinal='2' />
+              <column datatype='string' name='Batting_Hand' ordinal='3' />
+              <column datatype='string' name='Bowling_Skill' ordinal='4' />
+              <column datatype='string' name='Country' ordinal='5' />
+              <column datatype='integer' name='Is_Umpire' ordinal='6' />
+              <column datatype='integer' name='F8' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Player_Match.csv' table='[Player_Match#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='Match_Id' ordinal='0' />
+              <column datatype='integer' name='Player_Id' ordinal='1' />
+              <column datatype='integer' name='Team_Id' ordinal='2' />
+              <column datatype='integer' name='Is_Keeper' ordinal='3' />
+              <column datatype='integer' name='Is_Captain' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Team.csv' table='[Team#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='Team_Id' ordinal='0' />
+              <column datatype='string' name='Team_Name' ordinal='1' />
+              <column datatype='string' name='Team_Short_Code' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Ball_Id]' value='[Ball_by_Ball.csv].[Ball_Id]' />
+          <map key='[Batsman_Scored]' value='[Ball_by_Ball.csv].[Batsman_Scored]' />
+          <map key='[Batting_Hand]' value='[Player.csv].[Batting_Hand]' />
+          <map key='[Bowler_Id]' value='[Ball_by_Ball.csv].[Bowler_Id]' />
+          <map key='[Bowling_Skill]' value='[Player.csv].[Bowling_Skill]' />
+          <map key='[City_Name]' value='[Match.csv].[City_Name]' />
+          <map key='[Country]' value='[Player.csv].[Country]' />
+          <map key='[DOB]' value='[Player.csv].[DOB]' />
+          <map key='[Dissimal_Type]' value='[Ball_by_Ball.csv].[Dissimal_Type]' />
+          <map key='[Extra_Runs]' value='[Ball_by_Ball.csv].[Extra_Runs]' />
+          <map key='[Extra_Type]' value='[Ball_by_Ball.csv].[Extra_Type]' />
+          <map key='[F8]' value='[Player.csv].[F8]' />
+          <map key='[Fielder_Id]' value='[Ball_by_Ball.csv].[Fielder_Id]' />
+          <map key='[First_Umpire_Id]' value='[Match.csv].[First_Umpire_Id]' />
+          <map key='[Host_Country]' value='[Match.csv].[Host_Country]' />
+          <map key='[IS_Result]' value='[Match.csv].[IS_Result]' />
+          <map key='[IS_Superover]' value='[Match.csv].[IS_Superover]' />
+          <map key='[Innings_Id]' value='[Ball_by_Ball.csv].[Innings_Id]' />
+          <map key='[Is_Captain]' value='[Player_Match.csv].[Is_Captain]' />
+          <map key='[Is_DuckWorthLewis]' value='[Match.csv].[Is_DuckWorthLewis]' />
+          <map key='[Is_Keeper]' value='[Player_Match.csv].[Is_Keeper]' />
+          <map key='[Is_Umpire]' value='[Player.csv].[Is_Umpire]' />
+          <map key='[Man_Of_The_Match_Id]' value='[Match.csv].[Man_Of_The_Match_Id]' />
+          <map key='[Match_Date]' value='[Match.csv].[Match_Date]' />
+          <map key='[Match_Id (Match.csv)]' value='[Match.csv].[Match_Id]' />
+          <map key='[Match_Id (Player_Match.csv)]' value='[Player_Match.csv].[Match_Id]' />
+          <map key='[Match_Id]' value='[Ball_by_Ball.csv].[Match_Id]' />
+          <map key='[Match_Winner_Id]' value='[Match.csv].[Match_Winner_Id]' />
+          <map key='[Non_Striker_Id]' value='[Ball_by_Ball.csv].[Non_Striker_Id]' />
+          <map key='[Opponent_Team_Id]' value='[Match.csv].[Opponent_Team_Id]' />
+          <map key='[Over_Id]' value='[Ball_by_Ball.csv].[Over_Id]' />
+          <map key='[Player_Id (Player_Match.csv)]' value='[Player_Match.csv].[Player_Id]' />
+          <map key='[Player_Id]' value='[Player.csv].[Player_Id]' />
+          <map key='[Player_Name]' value='[Player.csv].[Player_Name]' />
+          <map key='[Player_dissimal_Id]' value='[Ball_by_Ball.csv].[Player_dissimal_Id]' />
+          <map key='[Season_Id]' value='[Match.csv].[Season_Id]' />
+          <map key='[Second_Umpire_Id]' value='[Match.csv].[Second_Umpire_Id]' />
+          <map key='[Striker_Batting_Position]' value='[Ball_by_Ball.csv].[Striker_Batting_Position]' />
+          <map key='[Striker_Id]' value='[Ball_by_Ball.csv].[Striker_Id]' />
+          <map key='[Team_Batting_Id]' value='[Ball_by_Ball.csv].[Team_Batting_Id]' />
+          <map key='[Team_Bowling_Id]' value='[Ball_by_Ball.csv].[Team_Bowling_Id]' />
+          <map key='[Team_Id (Team.csv)]' value='[Team.csv].[Team_Id]' />
+          <map key='[Team_Id]' value='[Player_Match.csv].[Team_Id]' />
+          <map key='[Team_Name]' value='[Team.csv].[Team_Name]' />
+          <map key='[Team_Name_Id]' value='[Match.csv].[Team_Name_Id]' />
+          <map key='[Team_Short_Code]' value='[Team.csv].[Team_Short_Code]' />
+          <map key='[Toss_Decision]' value='[Match.csv].[Toss_Decision]' />
+          <map key='[Toss_Winner_Id]' value='[Match.csv].[Toss_Winner_Id]' />
+          <map key='[Venue_Name]' value='[Match.csv].[Venue_Name]' />
+          <map key='[Win_Type]' value='[Match.csv].[Win_Type]' />
+          <map key='[Won_By]' value='[Match.csv].[Won_By]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Team.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Match_Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Innings_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Innings_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Innings_Id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Over_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Over_Id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ball_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ball_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Ball_Id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Batting_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Batting_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Team_Batting_Id</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Bowling_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Bowling_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Team_Bowling_Id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Striker_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Striker_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Striker_Id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Striker_Batting_Position</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Striker_Batting_Position]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Striker_Batting_Position</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Non_Striker_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Non_Striker_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Non_Striker_Id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowler_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bowler_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Bowler_Id</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batsman_Scored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Batsman_Scored]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Batsman_Scored</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extra_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Extra_Type]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Extra_Type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extra_Runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Extra_Runs]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Extra_Runs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_dissimal_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_dissimal_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Player_dissimal_Id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dissimal_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dissimal_Type]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Dissimal_Type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fielder_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fielder_Id]</local-name>
+            <parent-name>[Ball_by_Ball.csv]</parent-name>
+            <remote-alias>Fielder_Id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match_Id (Match.csv)]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Match_Id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Match_Date]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Match_Date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Name_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Name_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Team_Name_Id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Opponent_Team_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Opponent_Team_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Opponent_Team_Id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Season_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Season_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Season_Id</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Venue_Name]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Venue_Name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss_Winner_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Toss_Winner_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Toss_Winner_Id</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Toss_Decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Toss_Decision]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Toss_Decision</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IS_Superover</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IS_Superover]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>IS_Superover</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IS_Result</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IS_Result]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>IS_Result</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_DuckWorthLewis</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_DuckWorthLewis]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Is_DuckWorthLewis</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Win_Type]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Win_Type</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Won_By</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Won_By]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Won_By</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match_Winner_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match_Winner_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Match_Winner_Id</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Man_Of_The_Match_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Man_Of_The_Match_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Man_Of_The_Match_Id</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First_Umpire_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[First_Umpire_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>First_Umpire_Id</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second_Umpire_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Second_Umpire_Id]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Second_Umpire_Id</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City_Name]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>City_Name</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Host_Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Host_Country]</local-name>
+            <parent-name>[Match.csv]</parent-name>
+            <remote-alias>Host_Country</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_Id]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Player_Id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player_Name]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Player_Name</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batting_Hand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Batting_Hand]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Batting_Hand</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bowling_Skill</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bowling_Skill]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Bowling_Skill</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Umpire</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Umpire]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>Is_Umpire</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[Player.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player.csv_DE918BCD58B5441BA05531F125E1A553]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Match_Id (Player_Match.csv)]</local-name>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias>Match_Id</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player_Id (Player_Match.csv)]</local-name>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias>Player_Id</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Id]</local-name>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias>Team_Id</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Keeper</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Keeper]</local-name>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias>Is_Keeper</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Captain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Captain]</local-name>
+            <parent-name>[Player_Match.csv]</parent-name>
+            <remote-alias>Is_Captain</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Team_Id (Team.csv)]</local-name>
+            <parent-name>[Team.csv]</parent-name>
+            <remote-alias>Team_Id</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Team.csv_20A0DE427B1941C2A0DD4EE346AE6186]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team_Name]</local-name>
+            <parent-name>[Team.csv]</parent-name>
+            <remote-alias>Team_Name</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Team.csv_20A0DE427B1941C2A0DD4EE346AE6186]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team_Short_Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team_Short_Code]</local-name>
+            <parent-name>[Team.csv]</parent-name>
+            <remote-alias>Team_Short_Code</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Team.csv_20A0DE427B1941C2A0DD4EE346AE6186]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ball Id' datatype='integer' name='[Ball_Id]' role='dimension' type='ordinal' />
+      <column caption='Batsman Scored' datatype='integer' name='[Batsman_Scored]' role='measure' type='quantitative' />
+      <column caption='Batting Hand' datatype='string' name='[Batting_Hand]' role='dimension' type='nominal' />
+      <column caption='Bowler Id' datatype='integer' name='[Bowler_Id]' role='dimension' type='ordinal' />
+      <column caption='Bowling Skill' datatype='string' name='[Bowling_Skill]' role='dimension' type='nominal' />
+      <column caption='top 5 calc' datatype='integer' name='[Calculation_836825150327902208]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF ([Season_Id]=8) THEN [Batsman_Scored] END)' />
+      </column>
+      <column caption='City Name' datatype='string' name='[City_Name]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dissimal Type' datatype='string' name='[Dissimal_Type]' role='dimension' type='nominal' />
+      <column caption='Extra Runs' datatype='integer' name='[Extra_Runs]' role='measure' type='quantitative' />
+      <column caption='Extra Type' datatype='string' name='[Extra_Type]' role='dimension' type='nominal' />
+      <column caption='Fielder Id' datatype='integer' name='[Fielder_Id]' role='dimension' type='ordinal' />
+      <column caption='First Umpire Id' datatype='integer' name='[First_Umpire_Id]' role='dimension' type='ordinal' />
+      <column caption='Host Country' datatype='string' name='[Host_Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='IS Result' datatype='integer' name='[IS_Result]' role='measure' type='quantitative' />
+      <column caption='IS Superover' datatype='integer' name='[IS_Superover]' role='measure' type='quantitative' />
+      <column caption='Innings Id' datatype='integer' name='[Innings_Id]' role='dimension' type='ordinal' />
+      <column caption='Is Captain' datatype='integer' name='[Is_Captain]' role='measure' type='quantitative' />
+      <column caption='Is DuckWorthLewis' datatype='integer' name='[Is_DuckWorthLewis]' role='measure' type='quantitative' />
+      <column caption='Is Keeper' datatype='integer' name='[Is_Keeper]' role='measure' type='quantitative' />
+      <column caption='Is Umpire' datatype='integer' name='[Is_Umpire]' role='measure' type='quantitative' />
+      <column caption='Man Of The Match Id' datatype='integer' name='[Man_Of_The_Match_Id]' role='dimension' type='ordinal' />
+      <column caption='Match Date' datatype='date' name='[Match_Date]' role='dimension' type='ordinal' />
+      <column caption='Match Id (Match.csv)' datatype='integer' name='[Match_Id (Match.csv)]' role='dimension' type='ordinal' />
+      <column caption='Match Id (Player Match.csv)' datatype='integer' name='[Match_Id (Player_Match.csv)]' role='dimension' type='ordinal' />
+      <column caption='Match Id' datatype='integer' name='[Match_Id]' role='dimension' type='ordinal' />
+      <column caption='Match Winner Id' datatype='integer' name='[Match_Winner_Id]' role='dimension' type='ordinal' />
+      <column caption='Non Striker Id' datatype='integer' name='[Non_Striker_Id]' role='dimension' type='ordinal' />
+      <column caption='Opponent Team Id' datatype='integer' name='[Opponent_Team_Id]' role='dimension' type='ordinal' />
+      <column caption='Over Id' datatype='integer' name='[Over_Id]' role='dimension' type='ordinal' />
+      <column caption='Player Id (Player Match.csv)' datatype='integer' name='[Player_Id (Player_Match.csv)]' role='dimension' type='ordinal' />
+      <column caption='Player Id' datatype='integer' name='[Player_Id]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+      <column caption='Player dissimal Id' datatype='integer' name='[Player_dissimal_Id]' role='dimension' type='ordinal' />
+      <column caption='Season Id' datatype='integer' name='[Season_Id]' role='dimension' type='ordinal' />
+      <column caption='Second Umpire Id' datatype='integer' name='[Second_Umpire_Id]' role='dimension' type='ordinal' />
+      <column caption='Striker Batting Position' datatype='integer' name='[Striker_Batting_Position]' role='measure' type='quantitative' />
+      <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Batting Id' datatype='integer' name='[Team_Batting_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Bowling Id' datatype='integer' name='[Team_Bowling_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Id (Team.csv)' datatype='integer' name='[Team_Id (Team.csv)]' role='dimension' type='ordinal' />
+      <column caption='Team Id' datatype='integer' name='[Team_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Name' datatype='string' name='[Team_Name]' role='dimension' type='nominal' />
+      <column caption='Team Name Id' datatype='integer' name='[Team_Name_Id]' role='dimension' type='ordinal' />
+      <column caption='Team Short Code' datatype='string' name='[Team_Short_Code]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[Toss_Decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner Id' datatype='integer' name='[Toss_Winner_Id]' role='dimension' type='ordinal' />
+      <column caption='Venue Name' datatype='string' name='[Venue_Name]' role='dimension' type='nominal' />
+      <column caption='Win Type' datatype='string' name='[Win_Type]' role='dimension' type='nominal' />
+      <column caption='Won By' datatype='integer' name='[Won_By]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Ball_by_Ball.csv' datatype='table' name='[__tableau_internal_object_id__].[Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Match.csv' datatype='table' name='[__tableau_internal_object_id__].[Match.csv_8372B1EB1AAD490DA36D289EBD36E28C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Player.csv' datatype='table' name='[__tableau_internal_object_id__].[Player.csv_DE918BCD58B5441BA05531F125E1A553]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Player_Match.csv' datatype='table' name='[__tableau_internal_object_id__].[Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Team.csv' datatype='table' name='[__tableau_internal_object_id__].[Team.csv_20A0DE427B1941C2A0DD4EE346AE6186]' role='measure' type='quantitative' />
+      <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Host_Country, City_Name'>
+          <field>[Host_Country]</field>
+          <field>[City_Name]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Player_Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;A Nehra&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AD Mathews&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;AT Rayudu&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;BMAJ Mendis&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;D du Preez&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DNT Zoysa&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;GD McGrath&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;IR Jaggi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;JM Kemp&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;KK Nair&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;M de Lange&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MEK Hussey&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MR Marsh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;P Kumar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;R Bhatia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;RN ten Doeschate&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;S Kaul&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SB Joshi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SM Pollock&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;SW Tait&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;V Pratap Singh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;YK Pathan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A Ashish Reddy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AB Dinda&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ankit Sharma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;BB Samantray&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CJ Jordan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;DJ Harris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ER Dwivedi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;HM Amla&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JD Unadkat&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Karanveer Singh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LA Carseldine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MA Khote&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MM Sharma&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;NL McCullum&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PM Sarvesh Kumar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RA Jadeja&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RV Gomez&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SA Abbott&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shoaib Malik&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SS Shaikh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;TR Birt&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;WP Saha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A Kumble&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AC Gilchrist&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AP Tare&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bipul Sharma&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CL White&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DJ Muthuswami&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;FY Fazal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;IC Pandey&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;JEC Franklin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;KD Karthik&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LPC Silva&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MC Henriques&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mohammad Asif&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NV Ojha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PSP Handscomb&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RG Sharma&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;S Badrinath&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Salman Butt&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SK Warne&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sunny Gupta&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Umar Gul&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Y Nagar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Zampa&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;AG Paunikar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;B Chipli&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;C Nanda&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DA Miller&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DR Martyn&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;GR Napier&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;J Suchith&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JP Faulkner&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;KP Appanna&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;M Manhas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MJ Clarke&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MS Wade&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;PA Patel&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;R McLaren&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;RR Powar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;S Narwal&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SD Chitnis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sohail Tanvir&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;T Taibu&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;VRV Singh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;YV Takawale&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;A Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AD Nath&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AUK Pathan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BR Dunk&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;D Kalyankrishna&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DP Nannes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;GH Vihari&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ishan Kishan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;JO Holder&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KL Rahul&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;M Kaif&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MF Maharoof&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MS Bisla&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;P Negi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;R Bishnoi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RP Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;S Kaushik&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SB Styris&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;SMSM Senanayake&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Swapnil Singh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;V Sehwag&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Younis Khan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Mishra&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AC Thomas&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AR Patel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BJ Haddin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;CM Gautam&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DJ Thornely&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;G Gambhir&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;IK Pathan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JH Kallis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;KH Pandya&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LR Shukla&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MC Juneja&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mohammad Hafeez&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;OA Shah&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;PV Tambe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RJ Harris&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;S Chanderpaul&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sandeep Sharma&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SL Malinga&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sunny Singh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;UT Khawaja&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Y Venugopal Rao&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AB Barath&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;AN Ghosh&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;BAW Mendis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CJ Anderson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DH Yagnik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;DW Steyn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;HH Gibbs&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;JC Buttler&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kamran Akmal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;L Balaji&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;M Vohra&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ML Hayden&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NJ Rimmington&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PJ Cummins&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;R Tewatia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;RS Sodhi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;S Tyagi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Shoaib Ahmed&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SR Watson&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;TM Head&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;WA Mota&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A Chandila&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AB McDonald&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anureet Singh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BB Sran&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CJ McKay&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DJ Hooda&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;F Behardien&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;HV Patel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;JDP Oram&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;KB Arun Karthik&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LA Pomersbach&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MA Starc&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MN Samuels&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;NLTC Perera&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PP Chawla&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RE Levi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RV Uthappa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SA Asnodkar&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SJ Srivastava&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SS Tiwary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;U Kaul&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;WPUJC Vaas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AA Noffke&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AM Rahane&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;B Sumanth&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CH Gayle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DB Ravi Teja&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;DT Christian&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Harmeet Singh&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JA Morkel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KA Pollard&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KW Richardson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;M Rawat&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MK Pandey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ND Doshi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PC Valthaty&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;R Sharma&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RS Bopara&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;S Sreesanth&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shakib Al Hasan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SPD Smith&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;TL Suman&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;VY Mahesh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A Mithun&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AC Voges&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AS Rajpoot&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BJ Hodge&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;CR Brathwaite&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DJG Sammy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GB Hogg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Imran Tahir&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JJ Bumrah&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;KJ Abbott&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;LRPL Taylor&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MD Mishra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mohammed Shami&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;P Awana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Q de Kock&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RJ Peterson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;S Dhawan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SB Bangar&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SM Harwood&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SV Samson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;UT Yadav&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;YA Abdulla&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AA Bilakhia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;AJ Finch&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;B Kumar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CA Ingram&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DA Warner&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DR Smith&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gurkeerat Singh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;J Syed Mohammad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;JR Hopes&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;KP Pietersen&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;M Morkel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MJ Guptill&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MV Boucher&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PA Reddy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;R Ninan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;RR Raje&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;S Rana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SE Bond&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SP Fleming&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;T Thushara&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;VS Malik&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Z Khan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AA Chavan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;AL Menaria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;B Laughlin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CA Lynn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DAJ Bracewell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DS Kulkarni&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;H Das&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;J Theron&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;K Goel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;KS Williamson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;M Muralitharan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MJ Lumb&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;N Rana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pankaj Singh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;R Rampaul&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RR Rossouw&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;S Randiv&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SE Marsh&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SP Goswami&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;TD Paine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VS Yeligati&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AB Agarkar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;AN Ahmed&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;BA Bhatt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CH Morris&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DE Bollinger&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DT Patil&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Harpreet Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jaskaran Singh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KAJ Roach&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;L Ablish&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;M Vijay&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MK Tiwary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;NJ Maddinson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PD Collingwood&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;R Shukla&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;RS Gavaskar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;S Sriram&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Shivam Sharma&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SR Tendulkar&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;TM Dilshan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;W Jaffer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;AB de Villiers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Anirudh Singh&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;BB McCullum&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;CJ Ferguson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;DJ Bravo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;EJG Morgan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;HH Pandya&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;JD Ryder&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kamran Khan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;L Ronchi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MA Agarwal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MM Patel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NK Patel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PJ Sangwan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;R Vinay Kumar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;RT Ponting&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;S Vidyut&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shoaib Akhtar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SS Iyer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;TM Srivastava&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;WD Parnell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;A Symonds&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AD Russell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Azhar Mahmood&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;C Madan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;D Salunkhe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DP Vijaykumar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;GJ Bailey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;J Arunkumar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Joginder Sharma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;KM Jadhav&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M Kartik&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MG Johnson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MS Dhoni&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P Parameswaran&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;R Dhawan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;RR Bhatkal&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;S Ladda&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SB Wagh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SN Khan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;T Henderson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;VH Zol&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;YS Chahal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;A Mukund&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AD Mascarenhas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;AS Raut&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BJ Rohrer&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CRD Fernando&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DL Vettori&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GC Smith&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iqbal Abdulla&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;JJ van der Wath&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;KK Cooper&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;M Ashwin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MDKJ Perera&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MP Stoinis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;P Dogra&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;R Ashwin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RJ Quiney&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;S Gopal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SB Jakati&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SM Katich&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SW Billings&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;V Kohli&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yashpal Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A Chopra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Abdur Razzak&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AP Dole&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BCJ Cutting&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CK Kapugedera&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;DJ Hussey&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F du Plessis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;I Malhotra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;JDS Neesham&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;KC Cariappa&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LJ Wright&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mandeep Singh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MN van Wyk&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NM Coulter-Nile&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PP Ojha&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RE van der Merwe&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S Anirudha&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SA Yadav&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SK Raina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ST Jayasuriya&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UA Birla&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;X Thalaivan Sargunam&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AA Jhunjhunwala&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AM Nayar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;B Lee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;CA Pujara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DB Das&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DS Lehmann&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Harbhajan Singh&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;J Yadav&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;K Upadhyay&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;KV Sharma&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;M Ntini&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MJ McClenaghan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;N Saini&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Parvez Rasool&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;R Sathish&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RR Sarwan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;S Sohal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shahid Afridi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SP Narine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;TG Southee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VVS Laxman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A Uniyal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;AG Murtaza&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;B Akhil&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;C Munro&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;D Wiese&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DPMD Jayawardene&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;GJ Maxwell&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;J Botha&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;JP Duminy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;KMDN Kulasekara&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;M Klinger&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Misbah-ul-Haq&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MS Gony&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;P Sahu&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;R Dravid&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;RR Pant&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;S Nadeem&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SC Ganguly&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SN Thakur&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;T Kohli&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;VR Aaron&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yuvraj Singh&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A Flintoff&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AC Blizzard&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AP Majumdar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BE Hendricks&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CK Langeveldt&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DJ Jacobs&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;FH Edwards&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;I Sharma&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;JE Taylor&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;KC Sangakkara&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LMP Simmons&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mashrafe Mortaza&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mohammad Ashraful&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NS Naik&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;PR Shah&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RG More&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;S Aravind&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sachin Baby&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SK Trivedi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;STR Binny&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;UBT Chand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Y Gnaneswara Rao&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Ball_by_Ball.csv' id='Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C'>
+            <properties context=''>
+              <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Ball_by_Ball.csv' table='[Ball_by_Ball#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Match_Id' ordinal='0' />
+                  <column datatype='integer' name='Innings_Id' ordinal='1' />
+                  <column datatype='integer' name='Over_Id' ordinal='2' />
+                  <column datatype='integer' name='Ball_Id' ordinal='3' />
+                  <column datatype='integer' name='Team_Batting_Id' ordinal='4' />
+                  <column datatype='integer' name='Team_Bowling_Id' ordinal='5' />
+                  <column datatype='integer' name='Striker_Id' ordinal='6' />
+                  <column datatype='integer' name='Striker_Batting_Position' ordinal='7' />
+                  <column datatype='integer' name='Non_Striker_Id' ordinal='8' />
+                  <column datatype='integer' name='Bowler_Id' ordinal='9' />
+                  <column datatype='integer' name='Batsman_Scored' ordinal='10' />
+                  <column datatype='string' name='Extra_Type' ordinal='11' />
+                  <column datatype='integer' name='Extra_Runs' ordinal='12' />
+                  <column datatype='integer' name='Player_dissimal_Id' ordinal='13' />
+                  <column datatype='string' name='Dissimal_Type' ordinal='14' />
+                  <column datatype='integer' name='Fielder_Id' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Match.csv' id='Match.csv_8372B1EB1AAD490DA36D289EBD36E28C'>
+            <properties context=''>
+              <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Match.csv' table='[Match#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Match_Id' ordinal='0' />
+                  <column datatype='date' name='Match_Date' ordinal='1' />
+                  <column datatype='integer' name='Team_Name_Id' ordinal='2' />
+                  <column datatype='integer' name='Opponent_Team_Id' ordinal='3' />
+                  <column datatype='integer' name='Season_Id' ordinal='4' />
+                  <column datatype='string' name='Venue_Name' ordinal='5' />
+                  <column datatype='integer' name='Toss_Winner_Id' ordinal='6' />
+                  <column datatype='string' name='Toss_Decision' ordinal='7' />
+                  <column datatype='integer' name='IS_Superover' ordinal='8' />
+                  <column datatype='integer' name='IS_Result' ordinal='9' />
+                  <column datatype='integer' name='Is_DuckWorthLewis' ordinal='10' />
+                  <column datatype='string' name='Win_Type' ordinal='11' />
+                  <column datatype='integer' name='Won_By' ordinal='12' />
+                  <column datatype='integer' name='Match_Winner_Id' ordinal='13' />
+                  <column datatype='integer' name='Man_Of_The_Match_Id' ordinal='14' />
+                  <column datatype='integer' name='First_Umpire_Id' ordinal='15' />
+                  <column datatype='integer' name='Second_Umpire_Id' ordinal='16' />
+                  <column datatype='string' name='City_Name' ordinal='17' />
+                  <column datatype='string' name='Host_Country' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Player.csv' id='Player.csv_DE918BCD58B5441BA05531F125E1A553'>
+            <properties context=''>
+              <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Player.csv' table='[Player#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Player_Id' ordinal='0' />
+                  <column datatype='string' name='Player_Name' ordinal='1' />
+                  <column datatype='date' name='DOB' ordinal='2' />
+                  <column datatype='string' name='Batting_Hand' ordinal='3' />
+                  <column datatype='string' name='Bowling_Skill' ordinal='4' />
+                  <column datatype='string' name='Country' ordinal='5' />
+                  <column datatype='integer' name='Is_Umpire' ordinal='6' />
+                  <column datatype='integer' name='F8' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Player_Match.csv' id='Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26'>
+            <properties context=''>
+              <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Player_Match.csv' table='[Player_Match#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Match_Id' ordinal='0' />
+                  <column datatype='integer' name='Player_Id' ordinal='1' />
+                  <column datatype='integer' name='Team_Id' ordinal='2' />
+                  <column datatype='integer' name='Is_Keeper' ordinal='3' />
+                  <column datatype='integer' name='Is_Captain' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Team.csv' id='Team.csv_20A0DE427B1941C2A0DD4EE346AE6186'>
+            <properties context=''>
+              <relation connection='textscan.1bpcit80zbfd3m14nkl4y0nlfr0p' name='Team.csv' table='[Team#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='Team_Id' ordinal='0' />
+                  <column datatype='string' name='Team_Name' ordinal='1' />
+                  <column datatype='string' name='Team_Short_Code' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Match_Id]' />
+              <expression op='[Match_Id (Match.csv)]' />
+            </expression>
+            <first-end-point object-id='Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C' />
+            <second-end-point object-id='Match.csv_8372B1EB1AAD490DA36D289EBD36E28C' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Striker_Id]' />
+              <expression op='[Player_Id]' />
+            </expression>
+            <first-end-point object-id='Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C' />
+            <second-end-point object-id='Player.csv_DE918BCD58B5441BA05531F125E1A553' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Match_Id]' />
+              <expression op='[Match_Id (Player_Match.csv)]' />
+            </expression>
+            <first-end-point object-id='Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C' />
+            <second-end-point object-id='Player_Match.csv_938969BF4A024F20B4009BA1B3BA4A26' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Team_Batting_Id]' />
+              <expression op='[Team_Id (Team.csv)]' />
+            </expression>
+            <first-end-point object-id='Ball_by_Ball.csv_17D1BC0C99CB4764A6D163DB28E21E2C' />
+            <second-end-point object-id='Team.csv_20A0DE427B1941C2A0DD4EE346AE6186' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Top Players'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ball_by_Ball+' name='federated.0enygan0fecg7v1bbvak41hef7o0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0enygan0fecg7v1bbvak41hef7o0'>
+            <column caption='Batsman Scored' datatype='integer' name='[Batsman_Scored]' role='measure' type='quantitative' />
+            <column caption='top 5 calc' datatype='integer' name='[Calculation_836825150327902208]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF ([Season_Id]=8) THEN [Batsman_Scored] END)' />
+            </column>
+            <column caption='Player Name' datatype='string' name='[Player_Name]' role='dimension' type='nominal' />
+            <column caption='Season Id' datatype='integer' name='[Season_Id]' role='dimension' type='ordinal' />
+            <column caption='Striker Id' datatype='integer' name='[Striker_Id]' role='dimension' type='ordinal' />
+            <column caption='Team Id' datatype='integer' name='[Team_Id]' role='dimension' type='ordinal' />
+            <column caption='Team Name' datatype='string' name='[Team_Name]' role='dimension' type='nominal' />
+            <column-instance column='[Batsman_Scored]' derivation='Sum' name='[cum:sum:Batsman_Scored:qk:2]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' level-break='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Striker_Id:ok]' ordering-type='Field' type='CumTotal'>
+                <order field='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]' />
+                <order field='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Striker_Id:ok]' />
+                <order field='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Id:ok]' />
+                <order field='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Name:nk]' />
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Player_Name]' derivation='None' name='[none:Player_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Season_Id]' derivation='None' name='[none:Season_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Striker_Id]' derivation='None' name='[none:Striker_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Team_Id]' derivation='None' name='[none:Team_Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Team_Name]' derivation='None' name='[none:Team_Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='[Calculation_836825150327902208]' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter from='&quot;A Ashish Reddy&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;A Mukund&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;A Nehra&quot;' />
+                  <groupfilter from='&quot;A Singh&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;AA Jhunjhunwala&quot;' />
+                  <groupfilter from='&quot;AA Noffke&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;AD Russell&quot;' />
+                  <groupfilter from='&quot;AG Murtaza&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;AJ Finch&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AL Menaria&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AM Nayar&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AM Rahane&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AN Ahmed&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AN Ghosh&quot;' />
+                  <groupfilter from='&quot;Anirudh Singh&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;AS Raut&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AT Rayudu&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;AUK Pathan&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;Azhar Mahmood&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;B Akhil&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;B Chipli&quot;' />
+                  <groupfilter from='&quot;B Kumar&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;BE Hendricks&quot;' />
+                  <groupfilter from='&quot;Bipul Sharma&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;BMAJ Mendis&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;BR Dunk&quot;' />
+                  <groupfilter from='&quot;C Madan&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;C Nanda&quot;' />
+                  <groupfilter from='&quot;CA Ingram&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;CA Pujara&quot;' />
+                  <groupfilter from='&quot;CH Gayle&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;CK Langeveldt&quot;' />
+                  <groupfilter from='&quot;CL White&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;DJ Bravo&quot;' />
+                  <groupfilter from='&quot;DJ Harris&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;DJG Sammy&quot;' />
+                  <groupfilter from='&quot;DL Vettori&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;G Gambhir&quot;' />
+                  <groupfilter from='&quot;GB Hogg&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;GR Napier&quot;' />
+                  <groupfilter from='&quot;Gurkeerat Singh&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;Harpreet Singh&quot;' />
+                  <groupfilter from='&quot;HH Gibbs&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;I Sharma&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;IC Pandey&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;IK Pathan&quot;' />
+                  <groupfilter from='&quot;Imran Tahir&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;JC Buttler&quot;' />
+                  <groupfilter from='&quot;JD Ryder&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;JR Hopes&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;K Goel&quot;' />
+                  <groupfilter from='&quot;K Upadhyay&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;KD Karthik&quot;' />
+                  <groupfilter from='&quot;KH Pandya&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;KMDN Kulasekara&quot;' />
+                  <groupfilter from='&quot;KP Appanna&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;KS Williamson&quot;' />
+                  <groupfilter from='&quot;KV Sharma&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;M de Lange&quot;' />
+                  <groupfilter from='&quot;M Kaif&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;Mashrafe Mortaza&quot;' />
+                  <groupfilter from='&quot;MC Henriques&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;MG Johnson&quot;' />
+                  <groupfilter from='&quot;Misbah-ul-Haq&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;MP Stoinis&quot;' />
+                  <groupfilter from='&quot;MR Marsh&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;MS Wade&quot;' />
+                  <groupfilter from='&quot;MV Boucher&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;ND Doshi&quot;' />
+                  <groupfilter from='&quot;NJ Maddinson&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;OA Shah&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;P Awana&quot;' />
+                  <groupfilter from='&quot;P Dogra&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;P Parameswaran&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;P Sahu&quot;' />
+                  <groupfilter from='&quot;PA Patel&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;PD Collingwood&quot;' />
+                  <groupfilter from='&quot;PJ Cummins&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;PP Ojha&quot;' />
+                  <groupfilter from='&quot;PR Shah&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;RA Jadeja&quot;' />
+                  <groupfilter from='&quot;RE Levi&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;RJ Quiney&quot;' />
+                  <groupfilter from='&quot;RN ten Doeschate&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;RR Bhatkal&quot;' />
+                  <groupfilter from='&quot;RR Pant&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;RV Gomez&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;RV Uthappa&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;S Anirudha&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;S Aravind&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;S Badrinath&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;S Chanderpaul&quot;' />
+                  <groupfilter from='&quot;S Dhawan&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;S Randiv&quot;' />
+                  <groupfilter from='&quot;S Sohal&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;SD Chitnis&quot;' />
+                  <groupfilter from='&quot;SE Bond&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;Shoaib Malik&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;SJ Srivastava&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;SK Raina&quot;' />
+                  <groupfilter from='&quot;SK Trivedi&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;SL Malinga&quot;' />
+                  <groupfilter from='&quot;SM Harwood&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;SR Watson&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;SS Iyer&quot;' />
+                  <groupfilter from='&quot;SS Shaikh&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;STR Binny&quot;' />
+                  <groupfilter from='&quot;Sunny Gupta&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;T Kohli&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;T Taibu&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;T Thushara&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;TD Paine&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;TG Southee&quot;' />
+                  <groupfilter from='&quot;TL Suman&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;TM Srivastava&quot;' />
+                  <groupfilter from='&quot;TR Birt&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;V Sehwag&quot;' />
+                  <groupfilter function='member' level='[none:Player_Name:nk]' member='&quot;VH Zol&quot;' />
+                  <groupfilter from='&quot;VR Aaron&quot;' function='range' level='[none:Player_Name:nk]' to='&quot;Z Khan&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Season_Id:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='1' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='2' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='3' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='4' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='5' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='6' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='7' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='8' />
+              <groupfilter function='member' level='[none:Season_Id:ok]' member='9' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]</column>
+            <column>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Season_Id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk] / ([federated.0enygan0fecg7v1bbvak41hef7o0].[none:Striker_Id:ok] / ([federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Id:ok] / [federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Name:nk])))</rows>
+        <cols>[federated.0enygan0fecg7v1bbvak41hef7o0].[cum:sum:Batsman_Scored:qk:2]</cols>
+      </table>
+      <simple-id uuid='{02A3F7CC-12E9-4366-BAAE-17FCB3337E27}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Top Players'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Player_Name:nk]</field>
+            <field>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Season_Id:ok]</field>
+            <field>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Striker_Id:ok]</field>
+            <field>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Id:ok]</field>
+            <field>[federated.0enygan0fecg7v1bbvak41hef7o0].[none:Team_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2B869003-B06B-4F3A-AE1A-3393A8EB9630}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Top Players' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
